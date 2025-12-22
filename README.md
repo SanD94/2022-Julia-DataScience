@@ -15,9 +15,12 @@ There are three main components in this tutorial.
 If one wants to integrate with `R`, they can use the `RCall` package but there is a catch.
 The `$LD_LIBRARY_PATH` has to be set before running notebooks that use `RCall`. If, i.e., vscode is used, it should be set before opening it from the terminal.
 
+Another catch is about Python. Normal packages would use miniconda or conda to isolate package use from the system. If one does not want this kind of separation, as it's not easy to manage what is where, set the system python as default by exporting and run `Pkg.build("PyCall")`.
+
 ```sh
 export R_HOME=`R RHOME`
 export LD_LIBRARY_PATH=$R_HOME/lib:$LD_LIBRARY_PATH
+export PYTHON=`which python`
 code .
 ```
 
