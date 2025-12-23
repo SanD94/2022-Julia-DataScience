@@ -1,7 +1,6 @@
-[![nbviewer](https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.jupyter.org/github/JuliaAcademy/DataScience/)
-
 # Julia for Data Science
 Prepared by [@nassarhuda](https://github.com/nassarhuda). 
+Edited by [@sand94](https://github.com/sand94)
 
 Last updated: Dec 2025. Julia version used: 1.11.5
 
@@ -12,6 +11,11 @@ There are three main components in this tutorial.
 - Data (1 notebook)
 - Methods (10 notebooks)
 - Visualization (1 notebook)
+
+The methods section assumes that you have a good understanding of tools and how you deal with those. 
+Otherwise, it's better to treat them as a reference in Julia because the interpretation of output from those tools is not always straightforward.
+It may lead someone to think that they understand the tool, but they actually don't.
+
 
 If one wants to integrate with `R`, they can use the `RCall` package but there is a catch.
 The `$LD_LIBRARY_PATH` has to be set before running notebooks that use `RCall`. If, i.e., vscode is used, it should be set before opening it from the terminal.
@@ -24,8 +28,6 @@ export LD_LIBRARY_PATH=$R_HOME/lib:$LD_LIBRARY_PATH
 export PYTHON=`which python`
 code .
 ```
-
-
 
 ----------------------------
 # What is introduced
@@ -61,5 +63,4 @@ Note that the methods section show several kinds of plots too. But here, other p
 ### This is what one should expect in every notebook
 <img src="data/format.png" width="400">
 
------
-#### And finally... Enjoy the tutorial!
+
